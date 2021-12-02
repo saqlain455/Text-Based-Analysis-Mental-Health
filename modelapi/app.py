@@ -16,8 +16,8 @@ def predict_model():
     print("arguments")
     ex1=request.args.get('text')
     # ex1=request.form['text']
-    print(ex1)
     # ex1 = "I do not sleep"
+    print(ex1)
     print(loaded_model.predict([ex1]))
     print(loaded_model.predict_proba([ex1]))
     array=loaded_model.predict_proba([ex1])
